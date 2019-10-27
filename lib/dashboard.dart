@@ -14,12 +14,12 @@ class Dashboard extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
-        child: SafeArea(
-          child: Container(
-            color: Colors.grey[700],
-            child: Column(
-              children: <Widget>[
-                Expanded(
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              child: Container(
+                color: Colors.grey[700],
+                child: SafeArea(
                   child: ListView(
                     padding: EdgeInsets.only(
                       top: 15.0,
@@ -182,59 +182,59 @@ class Dashboard extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  color: Colors.grey[600],
-                  padding: EdgeInsets.only(
-                    bottom: 25.0,
-                    left: 25.0,
-                  ),
+              ),
+            ),
+            Container(
+              color: Colors.grey[600],
+              padding: EdgeInsets.only(
+                bottom: 25.0,
+                left: 25.0,
+              ),
+              child: Align(
+                alignment: FractionalOffset.bottomLeft,
+                child: Container(
                   child: Align(
-                    alignment: FractionalOffset.bottomLeft,
-                    child: Container(
-                      child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Column(
-                          children: <Widget>[
-                            Divider(),
-                            ListTile(
-                              onTap: () {
-                                print('Email Us pressed.\n');
-                              },
-                              leading: Icon(
-                                Icons.email,
-                                color: Colors.white,
-                              ),
-                              title: Text(
-                                Strings.emailUs,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              ),
+                    alignment: Alignment.bottomLeft,
+                    child: Column(
+                      children: <Widget>[
+                        Divider(),
+                        ListTile(
+                          onTap: () {
+                            print('Email Us pressed.\n');
+                          },
+                          leading: Icon(
+                            Icons.email,
+                            color: Colors.white,
+                          ),
+                          title: Text(
+                            Strings.emailUs,
+                            style: TextStyle(
+                              color: Colors.white,
                             ),
-                            ListTile(
-                              onTap: () {
-                                print('Call Us pressed.\n');
-                              },
-                              leading: Icon(
-                                Icons.phone,
-                                color: Colors.white,
-                              ),
-                              title: Text(
-                                Strings.callUs,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
-                      ),
+                        ListTile(
+                          onTap: () {
+                            print('Call Us pressed.\n');
+                          },
+                          leading: Icon(
+                            Icons.phone,
+                            color: Colors.white,
+                          ),
+                          title: Text(
+                            Strings.callUs,
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
-              ],
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );

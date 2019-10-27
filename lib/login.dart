@@ -69,16 +69,19 @@ class Login extends StatelessWidget {
                     top: 15.0,
                     bottom: 15.0,
                   ),
-                  child: RaisedButton(
-                    onPressed: () {
-                      print('Sign in pressed.\n');
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Dashboard()),
-                      );
-                    },
-                    color: Colors.blue,
-                    child: Text(Strings.signIn),
+                  child: ButtonTheme(
+                    minWidth: 375.0,
+                    child: RaisedButton(
+                      onPressed: () {
+                        print('Sign in pressed.\n');
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Dashboard()),
+                        );
+                      },
+                      color: Colors.blue,
+                      child: Text(Strings.signIn),
+                    ),
                   ),
                 ),
                 Container(
