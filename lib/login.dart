@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:life_safe/dashboard.dart';
+import 'package:life_safe/strings.dart';
 
 class Login extends StatelessWidget {
   @override
@@ -22,7 +24,7 @@ class Login extends StatelessWidget {
               alignment: Alignment.center,
               padding: EdgeInsets.all(25.0),
               child: Text(
-                'Please Sign In',
+                Strings.pleaseSignIn,
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
@@ -38,7 +40,7 @@ class Login extends StatelessWidget {
               ),
               child: TextFormField(
                 decoration: InputDecoration(
-                  labelText: 'Email:',
+                  labelText: Strings.email,
                 ),
               ),
             ),
@@ -51,7 +53,7 @@ class Login extends StatelessWidget {
               ),
               child: TextFormField(
                 decoration: InputDecoration(
-                  labelText: 'Password:',
+                  labelText: Strings.password,
                 ),
               ),
             ),
@@ -59,10 +61,14 @@ class Login extends StatelessWidget {
               padding: EdgeInsets.all(25.0),
               child: RaisedButton(
                 onPressed: () {
-                  print('Sign in button pressed.\n');
+                  print('Sign in pressed.\n');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Dashboard()),
+                  );
                 },
                 color: Colors.blue,
-                child: Text('Sign In'),
+                child: Text(Strings.signIn),
               ),
             ),
             Container(
@@ -73,7 +79,7 @@ class Login extends StatelessWidget {
                 right: 25.0,
                 bottom: 0.0,
               ),
-              child: Text('Don\'t have a Life Safe account?'),
+              child: Text(Strings.noAccount),
             ),
             Container(
               alignment: Alignment.center,
@@ -85,10 +91,10 @@ class Login extends StatelessWidget {
               ),
               child: GestureDetector(
                 onTap: () {
-                  print('Sign up text pressed.\n');
+                  print('Sign up pressed.\n');
                 },
                 child: Text(
-                  'Sign Up Here...',
+                  Strings.signUp,
                   style: TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.bold,
