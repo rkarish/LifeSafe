@@ -31,6 +31,7 @@ class Dashboard extends StatelessWidget {
                         Strings.dashboard,
                         style: TextStyle(
                           color: Colors.white,
+                          fontSize: 20,
                         ),
                       ),
                     ),
@@ -42,6 +43,7 @@ class Dashboard extends StatelessWidget {
                         Strings.onboardingStart,
                         style: TextStyle(
                           color: Colors.white,
+                          fontSize: 20,
                         ),
                       ),
                     ),
@@ -53,6 +55,7 @@ class Dashboard extends StatelessWidget {
                         Strings.reportBugs,
                         style: TextStyle(
                           color: Colors.white,
+                          fontSize: 20,
                         ),
                       ),
                     ),
@@ -61,11 +64,16 @@ class Dashboard extends StatelessWidget {
                         Strings.uploadFile,
                         style: TextStyle(
                           color: Colors.white,
+                          fontSize: 20,
                         ),
                       ),
                       children: <Widget>[
                         Padding(
-                          padding: EdgeInsets.only(left: 50),
+                          padding: EdgeInsets.only(
+                            left: 50,
+                            top: 15,
+                            bottom: 20,
+                          ),
                           child: Align(
                             alignment: Alignment.topLeft,
                             child: GestureDetector(
@@ -84,8 +92,8 @@ class Dashboard extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.only(
                             left: 50,
-                            top: 25,
-                            bottom: 25,
+                            top: 15,
+                            bottom: 20,
                           ),
                           child: Align(
                             alignment: Alignment.topLeft,
@@ -109,11 +117,16 @@ class Dashboard extends StatelessWidget {
                         Strings.myNotifiers,
                         style: TextStyle(
                           color: Colors.white,
+                          fontSize: 20,
                         ),
                       ),
                       children: <Widget>[
                         Padding(
-                          padding: EdgeInsets.only(left: 50),
+                          padding: EdgeInsets.only(
+                            left: 50,
+                            top: 15,
+                            bottom: 20,
+                          ),
                           child: Align(
                             alignment: Alignment.topLeft,
                             child: GestureDetector(
@@ -132,8 +145,8 @@ class Dashboard extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.only(
                             left: 50,
-                            top: 25,
-                            bottom: 25,
+                            top: 15,
+                            bottom: 20,
                           ),
                           child: Align(
                               alignment: Alignment.topLeft,
@@ -159,6 +172,7 @@ class Dashboard extends StatelessWidget {
                         Strings.logout,
                         style: TextStyle(
                           color: Colors.white,
+                          fontSize: 20,
                         ),
                       ),
                     ),
