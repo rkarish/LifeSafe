@@ -19,7 +19,7 @@ class Dashboard extends StatelessWidget {
               Expanded(
                 child: ListView(
                   padding: EdgeInsets.only(
-                    top: 50,
+                    top: 100,
                     left: 25,
                   ),
                   children: <Widget>[
@@ -167,7 +167,7 @@ class Dashboard extends StatelessWidget {
               ),
               Container(
                 color: Colors.grey[600],
-                padding: EdgeInsets.only(bottom: 50, left: 25),
+                padding: EdgeInsets.only(bottom: 25, left: 25),
                 child: Align(
                   alignment: FractionalOffset.bottomLeft,
                   child: Container(

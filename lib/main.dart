@@ -11,6 +11,7 @@ class LifeSafe extends StatelessWidget {
       title: Strings.title,
       theme: ThemeData(
         primarySwatch: Colors.grey,
+        dividerColor: Colors.transparent,
       ),
       home: Login(),
     );
