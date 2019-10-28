@@ -40,17 +40,15 @@ class Dashboard extends StatelessWidget {
       Container(
         color: Colors.grey[600],
         padding: EdgeInsets.only(
+          top: 25.0,
           bottom: 25.0,
           left: 25.0,
         ),
         child: Align(
           alignment: FractionalOffset.bottomLeft,
           child: Container(
-            child: Align(
-              alignment: Alignment.bottomLeft,
-              child: Column(
-                children: _buildBottomMenuSelections(),
-              ),
+            child: Column(
+              children: _buildBottomMenuSelections(),
             ),
           ),
         ),
@@ -218,7 +216,6 @@ class Dashboard extends StatelessWidget {
 
   List<Widget> _buildBottomMenuSelections() {
     return [
-      Divider(),
       ListTile(
         onTap: () {
           print('Email Us pressed.\n');
