@@ -112,6 +112,7 @@ class Login extends StatelessWidget {
                         fontSize: 18.0,
                         fontWeight: FontWeight.bold,
                         color: Colors.blueAccent,
+                        decoration: TextDecoration.underline,
                       ),
                     ),
                   ),
